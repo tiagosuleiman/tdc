@@ -1,0 +1,14 @@
+[05-Jul-2016 20:45:24] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in /home/escol085/public_html/dao/ConexaoPDO.class.php:12
+Stack trace:
+#0 /home/escol085/public_html/dao/ConexaoPDO.class.php(12): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/escol085/public_html/dao/ConexaoPDO.class.php(30): ConexaoPDO->Connect()
+#2 /home/escol085/public_html/dao/testeConexao.php(9): ConexaoPDO->getConnection()
+#3 {main}
+  thrown in /home/escol085/public_html/dao/ConexaoPDO.class.php on line 12
+[11-Nov-2016 15:36:42] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000] [1044] Access denied for user 'escol085_tdc'@'localhost' to database 'escol085_conecta'' in /home/escol085/public_html/dao/ConexaoPDO.class.php:42
+Stack trace:
+#0 /home/escol085/public_html/dao/ConexaoPDO.class.php(42): PDO->__construct('mysql:host=loca...', 'escol085_tdc', 'tiago')
+#1 /home/escol085/public_html/dao/ConexaoPDO.class.php(60): ConexaoPDO_C->Connect()
+#2 /home/escol085/public_html/dao/testeConexao.php(9): ConexaoPDO_C->getConnection()
+#3 {main}
+  thrown in /home/escol085/public_html/dao/ConexaoPDO.class.php on line 42
