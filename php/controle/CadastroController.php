@@ -72,8 +72,8 @@ class CadastroController {
             'host' => 'ssl://smtp.gmail.com',
             'port' => '465',
             'auth' => true,
-            'username' => 'namielust@gmail.com',
-            'password' => 'tonkpils'
+            'username' => 'xxx@gmail.com',
+            'password' => 'yourPass'
          ));
 
         $mail = $smtp->send(DESTINO, $headers, $body);
